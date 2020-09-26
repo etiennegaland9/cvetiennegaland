@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 32.5%;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+}
+h1 {
+  font-size: 8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+h2 {
+  font-size: 6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+li,
+p {
+  list-style: none;
+  font-size: 3rem;
+}
+aside {
+  width: 100%;
+  background-color: rgb(200, 200, 200);
+  padding: 1rem;
+}
+.profilPicMobile {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.profilPicMobile img {
+  width: 250px;
+}
+aside h2 {
+  text-align: center;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+}
+.civil {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  line-height: 5rem;
+}
+.icon {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.icon img {
+  width: 3.5rem;
+}
+.icon img[alt="map"] {
+  margin-top: 1rem;
+  margin-bottom: 9.5rem;
+}
+.contact {
+  width: 100%;
+}
+.PDF {
+  width: 50%;
+  margin: auto;
+  padding: 0.5rem;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.PDF a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+.PDF a:hover {
+  color: red;
+  font-weight: bolder;
+}
+.competences .line {
+  display: flex;
+  justify-content: space-evenly;
+}
+.competences .line .name {
+  line-height: 10rem;
+}
+.competences img {
+  width: 50px;
+  border-radius: 10px;
+}
+
+main {
+  width: 100%;
+  color: rgb(200, 200, 200);
+  background-color: rgb(14, 65, 85);
+  padding: 1rem;
+}
+main h2 {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.profilPic {
+  display: none;
+}
+.formations,
+.experiences {
+  padding: 1rem;
+  line-height: 5rem;
+}
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+  /* border: 1px solid red; */
+}
+.formation1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+.formation2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 13rem;
+  margin-bottom: 3rem;
+}
+.formation3 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 23rem;
+  margin-bottom: 3rem;
+}
+.left {
+  width: 30%;
+  padding-left: 1rem;
+}
+.center,
+.right,
+.metier {
+  width: 100%;
+}
+.metier p {
+  padding-top: 1rem;
+}
+.details {
+  display: flex;
+}
+.details .right {
+  width: 50%;
+}
+
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media (min-width: 980px) {
+  .container {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .page {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 5rem;
+  }
+  h3 {
+    text-align: left;
+    margin-left: 5rem;
+  }
+  aside {
+    width: 40%;
+    padding: 5rem 1rem 1rem 1rem;
+  }
+  .profilPicMobile {
+    display: none;
+  }
+  .icon {
+    width: 33%;
+  }
+  main h2 {
+    text-align: left;
+  }
+  .profilPic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .profilPic img {
+    width: 250px;
+  }
+  .formations,
+  .experiences {
+    padding: 3rem;
+  }
+  .formation1 {
+    padding-left: 5rem;
+  }
+  .formation2 {
+    margin-left: 25rem;
+  }
+  .formation3 {
+    margin-left: 45rem;
+  }
+  .left {
+    padding-left: 3rem;
+  }
+}
