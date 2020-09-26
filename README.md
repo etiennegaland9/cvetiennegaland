@@ -1,1 +1,3 @@
-# etiennegaland9.github.io
+# cvetiennegaland
+
+Mon cv sous un format html. Mais vous pouvez aussi consulter mon site : http://etiennegaland.fr/ sur lequel vous pourrez retrouver toutes ces infos, et plus...
